@@ -12,12 +12,13 @@ export default function Navbar(): React.ReactElement {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      // Active section detection
+      // Active section detection using getBoundingClientRect
+      // This works correctly even when ScrollTrigger pins sections
       const sections = document.querySelectorAll<HTMLElement>('.section, .hero');
       let current = '';
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 200;
-        if (window.scrollY >= sectionTop) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 200) {
           current = section.getAttribute('id') || '';
         }
       });
