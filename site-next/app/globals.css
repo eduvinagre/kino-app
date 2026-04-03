@@ -419,7 +419,7 @@ input, textarea, select { font-family: inherit; outline: none; border: none; bac
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center, transparent 0%, var(--bg) 70%);
+    background: radial-gradient(ellipse at center, transparent 30%, var(--bg) 85%);
     z-index: 1;
     pointer-events: none;
 }

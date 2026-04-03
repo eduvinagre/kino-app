@@ -5,14 +5,14 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
 const CONFIG = {
-  particleCount: 180,
-  connectionDistance: 120,
-  mouseInfluence: 150,
-  particleSize: 2,
+  particleCount: 300,
+  connectionDistance: 150,
+  mouseInfluence: 200,
+  particleSize: 3,
   speed: 0.3,
-  fieldWidth: 800,
-  fieldHeight: 500,
-  fieldDepth: 400,
+  fieldWidth: 700,
+  fieldHeight: 450,
+  fieldDepth: 300,
 };
 
 interface Particle {
@@ -34,8 +34,8 @@ const vertexShader = `
     vColor = color;
     vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
     float dist = length(mvPosition.xyz);
-    vAlpha = smoothstep(800.0, 200.0, dist);
-    gl_PointSize = size * (400.0 / -mvPosition.z);
+    vAlpha = smoothstep(1000.0, 100.0, dist);
+    gl_PointSize = size * (500.0 / -mvPosition.z);
     gl_Position = projectionMatrix * mvPosition;
   }
 `;
@@ -46,7 +46,7 @@ const fragmentShader = `
   void main() {
     float d = length(gl_PointCoord - vec2(0.5));
     if (d > 0.5) discard;
-    float alpha = smoothstep(0.5, 0.1, d) * vAlpha;
+    float alpha = smoothstep(0.5, 0.05, d) * vAlpha * 1.4;
     gl_FragColor = vec4(vColor, alpha);
   }
 `;
@@ -75,7 +75,7 @@ function ParticleNetwork(): React.ReactElement {
         vx: (Math.random() - 0.5) * CONFIG.speed,
         vy: (Math.random() - 0.5) * CONFIG.speed,
         vz: (Math.random() - 0.5) * CONFIG.speed * 0.5,
-        baseSize: CONFIG.particleSize + Math.random() * 2,
+        baseSize: CONFIG.particleSize + Math.random() * 3,
       };
       p.push(particle);
 
@@ -183,8 +183,8 @@ function ParticleNetwork(): React.ReactElement {
           la[idx + 4] = pj.y;
           la[idx + 5] = pj.z;
 
-          const r = 1.0 * alpha * 0.3;
-          const g = 0.6 * alpha * 0.3;
+          const r = 1.0 * alpha * 0.5;
+          const g = 0.6 * alpha * 0.5;
           ca[idx] = r;
           ca[idx + 1] = g;
           ca[idx + 2] = 0;
@@ -235,7 +235,7 @@ function ParticleNetwork(): React.ReactElement {
           <bufferAttribute attach="attributes-position" args={[linePositions, 3]} />
           <bufferAttribute attach="attributes-color" args={[lineColors, 3]} />
         </bufferGeometry>
-        <lineBasicMaterial vertexColors transparent opacity={0.35} blending={THREE.AdditiveBlending} depthWrite={false} />
+        <lineBasicMaterial vertexColors transparent opacity={0.55} blending={THREE.AdditiveBlending} depthWrite={false} />
       </lineSegments>
     </group>
   );
@@ -245,7 +245,7 @@ export default function HeroScene(): React.ReactElement {
   return (
     <div className="hero-canvas-container">
       <Canvas
-        camera={{ position: [0, 0, 600], fov: 60, near: 1, far: 2000 }}
+        camera={{ position: [0, 0, 450], fov: 65, near: 1, far: 2000 }}
         gl={{ antialias: true, alpha: true }}
         style={{ background: 'transparent' }}
         dpr={[1, 2]}
