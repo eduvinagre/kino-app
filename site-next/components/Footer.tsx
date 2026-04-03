@@ -12,12 +12,12 @@ export default function Footer(): React.ReactElement {
               <span className="logo-bracket">]</span>
             </a>
             <p>
-              Especialistas em Amazon Connect e servicos AWS. Transformando o atendimento ao cliente
+              Especialistas em Amazon Connect e serviços AWS. Transformando o atendimento ao cliente
               com tecnologia de ponta.
             </p>
           </div>
           <div className="footer-links-group">
-            <h4>Servicos</h4>
+            <h4>Serviços</h4>
             {footerServiceLinks.map((link) => (
               <a key={link.label} href={link.href}>{link.label}</a>
             ))}

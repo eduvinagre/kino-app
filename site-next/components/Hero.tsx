@@ -29,7 +29,7 @@ export default function Hero(): React.ReactElement {
         <p className="hero-subtitle">
           Especialistas em <strong>Amazon Connect</strong> e servicos AWS.
           <br />
-          Implementacao, migracao e gestao de contact centers inteligentes.
+          Implementação, migração e gestão de contact centers inteligentes.
         </p>
         <div className="hero-cta">
           <MagneticButton href="#contato" className="btn btn-primary">

@@ -9,14 +9,14 @@ export default function Differentials(): React.ReactElement {
       <div className="container">
         <div className="diff-layout">
           <div className="diff-left">
-            <span className="section-label">// Por que nos?</span>
+            <span className="section-label">// Por que nós?</span>
             <h2 className="section-title">
               Resultados que<br />
-              <span className="accent">fazem diferenca</span>
+              <span className="accent">fazem diferença</span>
             </h2>
             <p className="section-desc">
               Somos especialistas focados exclusivamente em Amazon Connect e AWS. Isso significa
-              implementacoes mais rapidas, custos menores e expertise incomparavel.
+              implementações mais rápidas, custos menores e expertise incomparável.
             </p>
             <MagneticButton href="#contato" className="btn btn-primary">
               <span>Comece Agora</span>

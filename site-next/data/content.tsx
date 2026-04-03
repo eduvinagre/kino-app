@@ -39,7 +39,7 @@ export interface SelectOption {
 }
 
 export const navLinks: NavLink[] = [
-  { href: '#servicos', label: 'Servicos' },
+  { href: '#servicos', label: 'Serviços' },
   { href: '#diferenciais', label: 'Diferenciais' },
   { href: '#processo', label: 'Processo' },
   { href: '#tecnologias', label: 'Tecnologias' },
@@ -48,9 +48,9 @@ export const navLinks: NavLink[] = [
 export const services: Service[] = [
   {
     number: '01',
-    title: 'Implementacao',
+    title: 'Implementação',
     description:
-      'Design e deploy de contact centers completos. Fluxos de URA, roteamento inteligente, integracoes com CRM e relatorios em tempo real.',
+      'Design e deploy de contact centers completos. Fluxos de URA, roteamento inteligente, integrações com CRM e relatórios em tempo real.',
     tags: ['Amazon Connect', 'Contact Flows'],
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -63,9 +63,9 @@ export const services: Service[] = [
   },
   {
     number: '02',
-    title: 'Migracao',
+    title: 'Migração',
     description:
-      'Migracao segura de sistemas legados Avaya, Cisco, Genesys para Amazon Connect. Portabilidade de numeros e dados historicos.',
+      'Migração segura de sistemas legados Avaya, Cisco, Genesys para Amazon Connect. Portabilidade de números e dados históricos.',
     tags: ['Zero Downtime', 'Data Migration'],
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -77,9 +77,9 @@ export const services: Service[] = [
   },
   {
     number: '03',
-    title: 'IA & Automacao',
+    title: 'IA & Automação',
     description:
-      'Chatbots com Amazon Lex, analise de sentimento com Contact Lens, voicebots e sumarizacao automatica de chamadas.',
+      'Chatbots com Amazon Lex, análise de sentimento com Contact Lens, voicebots e sumarização automática de chamadas.',
     tags: ['Amazon Lex', 'Contact Lens'],
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -92,9 +92,9 @@ export const services: Service[] = [
   },
   {
     number: '04',
-    title: 'Servicos Gerenciados',
+    title: 'Serviços Gerenciados',
     description:
-      'Monitoramento 24/7, suporte tecnico N1-N3, otimizacao continua, relatorios mensais e revisoes trimestrais de performance.',
+      'Monitoramento 24/7, suporte técnico N1-N3, otimização contínua, relatórios mensais e revisões trimestrais de performance.',
     tags: ['24/7 Support', 'SLA Garantido'],
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -109,10 +109,10 @@ export const services: Service[] = [
 ];
 
 export const stats: Stat[] = [
-  { count: 80, suffix: '%', label: 'Reducao de custos vs. sistemas legados' },
-  { count: 4, suffix: 'sem.', label: 'Tempo medio de implementacao' },
-  { count: 99, suffix: '.9%', label: 'Uptime garantido nos servicos gerenciados' },
-  { count: 24, suffix: '/7', label: 'Monitoramento e suporte tecnico' },
+  { count: 80, suffix: '%', label: 'Redução de custos vs. sistemas legados' },
+  { count: 4, suffix: 'sem.', label: 'Tempo médio de implementação' },
+  { count: 99, suffix: '.9%', label: 'Uptime garantido nos serviços gerenciados' },
+  { count: 24, suffix: '/7', label: 'Monitoramento e suporte técnico' },
 ];
 
 export const processSteps: ProcessStep[] = [
@@ -120,7 +120,7 @@ export const processSteps: ProcessStep[] = [
     number: '01',
     title: 'Descoberta',
     description:
-      'Workshops para entender suas necessidades, mapeamento de fluxos atuais e definicao de objetivos.',
+      'Workshops para entender suas necessidades, mapeamento de fluxos atuais e definição de objetivos.',
     duration: '1-2 semanas',
     icon: (
       <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -131,9 +131,9 @@ export const processSteps: ProcessStep[] = [
   },
   {
     number: '02',
-    title: 'Design da Solucao',
+    title: 'Design da Solução',
     description:
-      'Arquitetura tecnica, design de fluxos de contato, plano de integracoes e cronograma detalhado.',
+      'Arquitetura técnica, design de fluxos de contato, plano de integrações e cronograma detalhado.',
     duration: '1-2 semanas',
     icon: (
       <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -144,9 +144,9 @@ export const processSteps: ProcessStep[] = [
   },
   {
     number: '03',
-    title: 'Implementacao',
+    title: 'Implementação',
     description:
-      'Configuracao do Amazon Connect, desenvolvimento de fluxos, integracoes e customizacoes.',
+      'Configuração do Amazon Connect, desenvolvimento de fluxos, integrações e customizações.',
     duration: '3-6 semanas',
     icon: (
       <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -160,7 +160,7 @@ export const processSteps: ProcessStep[] = [
     number: '04',
     title: 'Testes & Go-Live',
     description:
-      'UAT, treinamento da equipe, migracao de numeros e lancamento com suporte hypercare dedicado.',
+      'UAT, treinamento da equipe, migração de números e lançamento com suporte hypercare dedicado.',
     duration: '1-2 semanas',
     icon: (
       <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -171,9 +171,9 @@ export const processSteps: ProcessStep[] = [
   },
   {
     number: '05',
-    title: 'Servicos Gerenciados',
+    title: 'Serviços Gerenciados',
     description:
-      'Monitoramento continuo, otimizacao, suporte 24/7 e evolucao constante da sua plataforma.',
+      'Monitoramento contínuo, otimização, suporte 24/7 e evolução constante da sua plataforma.',
     duration: 'Continuo',
     icon: (
       <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -203,22 +203,22 @@ export const techRing2: TechItem[] = [
 ];
 
 export const serviceOptions: SelectOption[] = [
-  { value: 'implementation', label: 'Implementacao Amazon Connect' },
-  { value: 'migration', label: 'Migracao de Contact Center' },
-  { value: 'ai', label: 'IA & Automacao' },
-  { value: 'managed', label: 'Servicos Gerenciados' },
+  { value: 'implementation', label: 'Implementação Amazon Connect' },
+  { value: 'migration', label: 'Migração de Contact Center' },
+  { value: 'ai', label: 'IA & Automação' },
+  { value: 'managed', label: 'Serviços Gerenciados' },
   { value: 'other', label: 'Outro' },
 ];
 
 export const footerServiceLinks: NavLink[] = [
-  { href: '#servicos', label: 'Implementacao' },
-  { href: '#servicos', label: 'Migracao' },
-  { href: '#servicos', label: 'IA & Automacao' },
-  { href: '#servicos', label: 'Servicos Gerenciados' },
+  { href: '#servicos', label: 'Implementação' },
+  { href: '#servicos', label: 'Migração' },
+  { href: '#servicos', label: 'IA & Automação' },
+  { href: '#servicos', label: 'Serviços Gerenciados' },
 ];
 
 export const footerCompanyLinks: NavLink[] = [
-  { href: '#diferenciais', label: 'Sobre Nos' },
+  { href: '#diferenciais', label: 'Sobre Nós' },
   { href: '#processo', label: 'Processo' },
   { href: '#tecnologias', label: 'Tecnologias' },
   { href: '#contato', label: 'Contato' },

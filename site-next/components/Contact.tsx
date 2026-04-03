@@ -31,7 +31,7 @@ export default function Contact(): React.ReactElement {
             </h2>
             <p className="section-desc">
               Agende uma conversa com nossos especialistas. Vamos entender suas necessidades e
-              apresentar a melhor solucao.
+              apresentar a melhor solução.
             </p>
             <div className="contact-info">
               <div className="contact-info-item">
@@ -75,7 +75,7 @@ export default function Contact(): React.ReactElement {
                     </option>
                   ))}
                 </select>
-                <label htmlFor="service">Servico de interesse</label>
+                <label htmlFor="service">Serviço de interesse</label>
                 <div className="form-line" />
               </div>
               <div className="form-group">

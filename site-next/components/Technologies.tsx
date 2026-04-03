@@ -10,8 +10,8 @@ export default function Technologies(): React.ReactElement {
         <SectionHeader
           center
           label="// Ecossistema"
-          title='Tecnologias que<br/><span class="accent">impulsionam</span> seu negocio'
-          description="Trabalhamos com o ecossistema completo da AWS para entregar solucoes integradas e escalaveis."
+          title='Tecnologias que<br/><span class="accent">impulsionam</span> seu negócio'
+          description="Trabalhamos com o ecossistema completo da AWS para entregar soluções integradas e escaláveis."
         />
 
         <div className="tech-orbit">

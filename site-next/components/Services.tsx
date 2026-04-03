@@ -8,9 +8,9 @@ export default function Services(): React.ReactElement {
     <section className="section services" id="servicos">
       <div className="container">
         <SectionHeader
-          label="// Servicos"
+          label="// Serviços"
           title='Solucoes completas em<br/><span class="accent">Amazon Connect</span>'
-          description="Do planejamento a operacao, cobrimos todo o ciclo de vida do seu contact center em nuvem."
+          description="Do planejamento à operação, cobrimos todo o ciclo de vida do seu contact center em nuvem."
         />
 
         <div className="services-grid">
