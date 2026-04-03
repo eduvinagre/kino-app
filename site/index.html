@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nome da Empresa] — Especialistas em Amazon Connect & AWS</title>
+    <meta name="description" content="Transforme seu atendimento ao cliente com Amazon Connect. Implementacao, migracao e servicos gerenciados AWS com especialistas certificados.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-bar"></div>
+            <span class="loader-text">Carregando</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">Nome da Empresa</span>
+                <span class="logo-bracket">]</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#servicos" class="nav-link">Servicos</a>
+                <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                <a href="#processo" class="nav-link">Processo</a>
+                <a href="#tecnologias" class="nav-link">Tecnologias</a>
+                <a href="#contato" class="nav-link nav-link-cta">Fale Conosco</a>
+            </div>
+
+            <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#servicos" class="mobile-link">Servicos</a>
+            <a href="#diferenciais" class="mobile-link">Diferenciais</a>
+            <a href="#processo" class="mobile-link">Processo</a>
+            <a href="#tecnologias" class="mobile-link">Tecnologias</a>
+            <a href="#contato" class="mobile-link mobile-link-cta">Fale Conosco</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                AWS Partner Network
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line"><span class="title-line-inner">Transformamos</span></span>
+                <span class="title-line"><span class="title-line-inner">seu atendimento</span></span>
+                <span class="title-line accent"><span class="title-line-inner">com a nuvem.</span></span>
+            </h1>
+            <p class="hero-subtitle">
+                Especialistas em <strong>Amazon Connect</strong> e servicos AWS.<br>
+                Implementacao, migracao e gestao de contact centers inteligentes.
+            </p>
+            <div class="hero-cta">
+                <a href="#contato" class="btn btn-primary magnetic" data-magnetic>
+                    <span>Iniciar Projeto</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#servicos" class="btn btn-ghost magnetic" data-magnetic>
+                    <span>Nossos Servicos</span>
+                </a>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICOS ==================== -->
+    <section class="section services" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">// Servicos</span>
+                <h2 class="section-title split-text">
+                    Solucoes completas em<br><span class="accent">Amazon Connect</span>
+                </h2>
+                <p class="section-desc">
+                    Do planejamento a operacao, cobrimos todo o ciclo de vida do seu contact center em nuvem.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card glass-card" data-service="1">
+                    <div class="card-number">01</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="6" y="6" width="36" height="36" rx="4"/>
+                            <path d="M6 18h36M18 18v24"/>
+                            <circle cx="30" cy="30" r="6"/>
+                            <path d="M34 34l4 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Implementacao</h3>
+                    <p class="card-desc">Design e deploy de contact centers completos. Fluxos de URA, roteamento inteligente, integracoes com CRM e relatorios em tempo real.</p>
+                    <div class="card-footer">
+                        <span class="card-tag">Amazon Connect</span>
+                        <span class="card-tag">Contact Flows</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card glass-card" data-service="2">
+                    <div class="card-number">02</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 24h8l4-12 8 24 4-12h8"/>
+                            <circle cx="8" cy="24" r="3"/>
+                            <circle cx="40" cy="24" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Migracao</h3>
+                    <p class="card-desc">Migracao segura de sistemas legados Avaya, Cisco, Genesys para Amazon Connect. Portabilidade de numeros e dados historicos.</p>
+                    <div class="card-footer">
+                        <span class="card-tag">Zero Downtime</span>
+                        <span class="card-tag">Data Migration</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card glass-card" data-service="3">
+                    <div class="card-number">03</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="16" r="8"/>
+                            <path d="M12 36c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
+                            <path d="M24 8V4M32 10l3-3M16 10l-3-3"/>
+                            <circle cx="24" cy="16" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">IA & Automacao</h3>
+                    <p class="card-desc">Chatbots com Amazon Lex, analise de sentimento com Contact Lens, voicebots e sumarizacao automatica de chamadas.</p>
+                    <div class="card-footer">
+                        <span class="card-tag">Amazon Lex</span>
+                        <span class="card-tag">Contact Lens</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card glass-card" data-service="4">
+                    <div class="card-number">04</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="8" width="32" height="24" rx="3"/>
+                            <path d="M8 16h32"/>
+                            <circle cx="14" cy="12" r="1.5" fill="currentColor"/>
+                            <circle cx="20" cy="12" r="1.5" fill="currentColor"/>
+                            <path d="M16 36h16M20 32v4M28 32v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Servicos Gerenciados</h3>
+                    <p class="card-desc">Monitoramento 24/7, suporte tecnico N1-N3, otimizacao continua, relatorios mensais e revisoes trimestrais de performance.</p>
+                    <div class="card-footer">
+                        <span class="card-tag">24/7 Support</span>
+                        <span class="card-tag">SLA Garantido</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DIFERENCIAIS ==================== -->
+    <section class="section differentials" id="diferenciais">
+        <div class="container">
+            <div class="diff-layout">
+                <div class="diff-left">
+                    <span class="section-label">// Por que nos?</span>
+                    <h2 class="section-title split-text">
+                        Resultados que<br><span class="accent">fazem diferenca</span>
+                    </h2>
+                    <p class="section-desc">
+                        Somos especialistas focados exclusivamente em Amazon Connect e AWS. Isso significa implementacoes mais rapidas, custos menores e expertise incomparavel.
+                    </p>
+                    <a href="#contato" class="btn btn-primary magnetic" data-magnetic>
+                        <span>Comece Agora</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="diff-right">
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <div class="stat-number" data-count="80">0</div>
+                            <div class="stat-suffix">%</div>
+                            <div class="stat-label">Reducao de custos vs. sistemas legados</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-number" data-count="4">0</div>
+                            <div class="stat-suffix">sem.</div>
+                            <div class="stat-label">Tempo medio de implementacao</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-number" data-count="99">0</div>
+                            <div class="stat-suffix">.9%</div>
+                            <div class="stat-label">Uptime garantido nos servicos gerenciados</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-number" data-count="24">0</div>
+                            <div class="stat-suffix">/7</div>
+                            <div class="stat-label">Monitoramento e suporte tecnico</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESSO (HORIZONTAL SCROLL) ==================== -->
+    <section class="section process" id="processo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">// Como funciona</span>
+                <h2 class="section-title split-text">
+                    Do conceito ao<br><span class="accent">go-live em semanas</span>
+                </h2>
+            </div>
+        </div>
+        <div class="process-wrapper">
+            <div class="process-track">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="20" cy="20" r="16"/>
+                                <path d="M20 12v8l5 5"/>
+                            </svg>
+                        </div>
+                        <h3>Descoberta</h3>
+                        <p>Workshops para entender suas necessidades, mapeamento de fluxos atuais e definicao de objetivos.</p>
+                        <span class="step-duration">1-2 semanas</span>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="6" y="6" width="28" height="28" rx="3"/>
+                                <path d="M6 14h28M14 14v20"/>
+                            </svg>
+                        </div>
+                        <h3>Design da Solucao</h3>
+                        <p>Arquitetura tecnica, design de fluxos de contato, plano de integracoes e cronograma detalhado.</p>
+                        <span class="step-duration">1-2 semanas</span>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 28l6-6 4 4 8-8"/>
+                                <polyline points="26 18 30 18 30 22"/>
+                                <rect x="6" y="6" width="28" height="28" rx="3"/>
+                            </svg>
+                        </div>
+                        <h3>Implementacao</h3>
+                        <p>Configuracao do Amazon Connect, desenvolvimento de fluxos, integracoes e customizacoes.</p>
+                        <span class="step-duration">3-6 semanas</span>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 6l14 28H6z"/>
+                                <path d="M20 16v8M20 28v2"/>
+                            </svg>
+                        </div>
+                        <h3>Testes & Go-Live</h3>
+                        <p>UAT, treinamento da equipe, migracao de numeros e lancamento com suporte hypercare dedicado.</p>
+                        <span class="step-duration">1-2 semanas</span>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 6a14 14 0 1 1 0 28 14 14 0 0 1 0-28"/>
+                                <path d="M14 20l4 4 8-8"/>
+                            </svg>
+                        </div>
+                        <h3>Servicos Gerenciados</h3>
+                        <p>Monitoramento continuo, otimizacao, suporte 24/7 e evolucao constante da sua plataforma.</p>
+                        <span class="step-duration">Continuo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TECNOLOGIAS ==================== -->
+    <section class="section technologies" id="tecnologias">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">// Ecossistema</span>
+                <h2 class="section-title split-text">
+                    Tecnologias que<br><span class="accent">impulsionam</span> seu negocio
+                </h2>
+                <p class="section-desc">
+                    Trabalhamos com o ecossistema completo da AWS para entregar solucoes integradas e escaláveis.
+                </p>
+            </div>
+
+            <div class="tech-orbit">
+                <div class="orbit-center">
+                    <div class="orbit-center-inner glass-card">
+                        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path d="M30 8C17.85 8 8 17.85 8 30s9.85 22 22 22 22-9.85 22-22S42.15 8 30 8z"/>
+                            <path d="M30 14c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16z"/>
+                            <circle cx="30" cy="30" r="6" fill="currentColor" opacity="0.3"/>
+                            <path d="M30 24v12M24 30h12"/>
+                        </svg>
+                        <span>Amazon Connect</span>
+                    </div>
+                </div>
+
+                <div class="orbit-ring orbit-ring-1">
+                    <div class="orbit-item" style="--angle: 0deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">Amazon Lex</span>
+                            <span class="orbit-desc">Chatbots IA</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 60deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">Contact Lens</span>
+                            <span class="orbit-desc">Analytics</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 120deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">Lambda</span>
+                            <span class="orbit-desc">Serverless</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 180deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">Amazon Polly</span>
+                            <span class="orbit-desc">Text-to-Speech</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 240deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">Bedrock</span>
+                            <span class="orbit-desc">IA Generativa</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 300deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">S3</span>
+                            <span class="orbit-desc">Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="orbit-ring orbit-ring-2">
+                    <div class="orbit-item" style="--angle: 30deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">Kinesis</span>
+                            <span class="orbit-desc">Streaming</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 90deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">QuickSight</span>
+                            <span class="orbit-desc">Dashboards</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 150deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">DynamoDB</span>
+                            <span class="orbit-desc">NoSQL DB</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 210deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">API Gateway</span>
+                            <span class="orbit-desc">APIs REST</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 270deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">CloudWatch</span>
+                            <span class="orbit-desc">Monitoring</span>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 330deg;">
+                        <div class="orbit-item-inner glass-card">
+                            <span class="orbit-label">IAM</span>
+                            <span class="orbit-desc">Seguranca</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section class="section contact" id="contato">
+        <div class="gradient-mesh"></div>
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <span class="section-label">// Contato</span>
+                    <h2 class="section-title split-text">
+                        Pronto para<br><span class="accent">transformar</span><br>seu atendimento?
+                    </h2>
+                    <p class="section-desc">
+                        Agende uma conversa com nossos especialistas. Vamos entender suas necessidades e apresentar a melhor solucao.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 8l9 6 9-6"/>
+                                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                            </svg>
+                            <span>contato@empresa.com.br</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+55 (11) 0000-0000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form glass-card" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Nome completo</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">E-mail corporativo</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder=" ">
+                            <label for="company">Empresa</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected></option>
+                                <option value="implementation">Implementacao Amazon Connect</option>
+                                <option value="migration">Migracao de Contact Center</option>
+                                <option value="ai">IA & Automacao</option>
+                                <option value="managed">Servicos Gerenciados</option>
+                                <option value="other">Outro</option>
+                            </select>
+                            <label for="service">Servico de interesse</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="3" placeholder=" "></textarea>
+                            <label for="message">Mensagem</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit magnetic" data-magnetic>
+                            <span>Enviar Mensagem</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">Nome da Empresa</span>
+                        <span class="logo-bracket">]</span>
+                    </a>
+                    <p>Especialistas em Amazon Connect e servicos AWS. Transformando o atendimento ao cliente com tecnologia de ponta.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Servicos</h4>
+                    <a href="#servicos">Implementacao</a>
+                    <a href="#servicos">Migracao</a>
+                    <a href="#servicos">IA & Automacao</a>
+                    <a href="#servicos">Servicos Gerenciados</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Empresa</h4>
+                    <a href="#diferenciais">Sobre Nos</a>
+                    <a href="#processo">Processo</a>
+                    <a href="#tecnologias">Tecnologias</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Social</h4>
+                    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="#" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#" target="_blank" rel="noopener">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-badges">
+                    <span class="aws-badge">AWS Partner</span>
+                </div>
+                <span>&copy; 2026 [Nome da Empresa]. Todos os direitos reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <script src="js/three-scene.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
